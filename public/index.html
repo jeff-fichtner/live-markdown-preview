@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+ <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/application.css">
+
+  <!-- JS libraries -->
+  <script src="js/mousetrap.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/markdown.min.js"></script>
+
+  <!-- App files -->
+  <script src="js/widget_view.js"></script>
+  <script src="js/widget_controller.js"></script>
+  <script src="js/application.js"></script>
+
+  <title>Live Markdown</title>
+</head>
+<body>
+  <div class="container">
+
+    <h1 id="title" class="center-align">live markdown</h1>
+
+    <form class="input-form col s12">
+      <div class="input-field col s12">
+        <textarea id="text-input" class="materialize-textarea mousetrap"></textarea>
+        <label for="text-input">Input:</label>
+      </div>
+    </form>
+
+    <div id="markdown-output" class="col s12"></div>
+
+  </div>
+</body>
+</html>
